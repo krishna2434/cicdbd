@@ -9,7 +9,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Its will install all dependence and node_mudules,package.json .
+Its will install all dependence and node_mudules,package.json....
 
 ### `npm start`
 
