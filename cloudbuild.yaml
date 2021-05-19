@@ -2,7 +2,9 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
   dir: 'function/dir/from/repo/root'
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['test']
+  dir: 'function/dir/from/repo/root'
 - name: 'gcr.io/cloud-builders/gcloud'
-  id: 'test'
   args: ['functions', 'deploy', 'hello','--entry-point','app','--runtime', 'nodejs12','--trigger-http','--allow-unauthenticated']
   dir: 'function/dir/from/repo/root'
