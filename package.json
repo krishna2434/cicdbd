@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js || node index.js"
+    "start": "nodemon index.js || node index.js",
+    "test": "react-scripts test",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
