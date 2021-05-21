@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-   args: ['build']
+   args: ['build','run']
 - name: 'gcr.io/cloud-builders/gcloud'
    args: ['functions', 'deploy', 'function-beejaDB','--entry-point','app','--runtime', 'nodejs12','--trigger-http','--allow-unauthenticated']
